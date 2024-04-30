@@ -70,9 +70,13 @@ const Index = () => {
 
   return (
     <>
-      <Button leftIcon={<FaMousePointer />} colorScheme="blue" onClick={onOpen}>
-        Select Element
-      </Button>
+      <Box p={5}>
+        <h1>Welcome to the Demo Page</h1>
+        <p>This is a paragraph to demonstrate the selection feature. Hover over any element and click to label it.</p>
+        <Button leftIcon={<FaMousePointer />} colorScheme="blue" onClick={onOpen}>
+          Select Element
+        </Button>
+      </Box>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
